@@ -1,0 +1,929 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/yurun/lastperson/ether/contracts/Address.sol": {
+      "lastModificationDate": 1618067859383,
+      "contentHash": "fc7c67d7b17cde979a685143a26b2bc8",
+      "sourceName": "contracts/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/SafeERC20.sol": {
+      "lastModificationDate": 1618067859387,
+      "contentHash": "cdab29f7cb76035e0cce222c4f7b9e38",
+      "sourceName": "contracts/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/IERC20.sol": {
+      "lastModificationDate": 1618067859383,
+      "contentHash": "70ec621ea910798b6c590a0b402a5bb9",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/yurun/lastperson/ether/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1618070703808,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/ExtraMath.sol": {
+      "lastModificationDate": 1618067859383,
+      "contentHash": "c5521e5ccedbfebe9e82873d95b74372",
+      "sourceName": "contracts/ExtraMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "ExtraMath"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/LiquidityProtectedBase.sol": {
+      "lastModificationDate": 1618067859387,
+      "contentHash": "9205f859107900bf10b788b60445cbbe",
+      "sourceName": "contracts/LiquidityProtectedBase.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./external/UniswapV2Library.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "KnowingLiquidityAddedBlock",
+        "LiquidityProtectedBase"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/external/UniswapV2Library.sol": {
+      "lastModificationDate": 1618081947959,
+      "contentHash": "57d8b1d041756a4f6c6c2433cf8d01d0",
+      "sourceName": "contracts/external/UniswapV2Library.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "UniswapV2Library"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/FrontrunnerTrap.sol": {
+      "lastModificationDate": 1618512134280,
+      "contentHash": "b9c2f0b535b7c4c84929c0f6015c4711",
+      "sourceName": "contracts/FrontrunnerTrap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableMask.sol",
+        "./ERC20Burnable.sol",
+        "./LiquidityProtectedBase.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "FrontrunnerTrap"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/OwnableMask.sol": {
+      "lastModificationDate": 1618067859387,
+      "contentHash": "112eb2710552d91dcf242f2d25d82f77",
+      "sourceName": "contracts/OwnableMask.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "OwnableMask"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/ERC20Burnable.sol": {
+      "lastModificationDate": 1618067859383,
+      "contentHash": "25267750be287de6b1b2e15d63e4d892",
+      "sourceName": "contracts/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/Context.sol": {
+      "lastModificationDate": 1618067859383,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "contracts/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/ERC20.sol": {
+      "lastModificationDate": 1618687676282,
+      "contentHash": "c865294613dc06aa849ec9fdb5ea9f1d",
+      "sourceName": "contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./IERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/EtherTrap.sol": {
+      "lastModificationDate": 1618074430630,
+      "contentHash": "2b9f84f764e1bcafa8891f3d1f62b6b8",
+      "sourceName": "contracts/EtherTrap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol",
+        "./FrontrunnerTrap.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "EtherTrap"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/MinerTrap.sol": {
+      "lastModificationDate": 1618512140328,
+      "contentHash": "d0d519752e00f1fd6029067258276886",
+      "sourceName": "contracts/MinerTrap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableMask.sol",
+        "./ERC20Burnable.sol",
+        "./LiquidityProtectedBase.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "MinerTrap"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/EtherTrap2.sol": {
+      "lastModificationDate": 1618512140328,
+      "contentHash": "609d24da1d4cce10e99005126b569e2f",
+      "sourceName": "contracts/EtherTrap2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol",
+        "./MinerTrap.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "EtherTrap2"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/WrapperTrap.sol": {
+      "lastModificationDate": 1618691772312,
+      "contentHash": "64ef326d555289f5424b44fef42e677f",
+      "sourceName": "contracts/WrapperTrap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableMask.sol",
+        "./ERC20Burnable.sol",
+        "./LiquidityProtectedBase.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "WrapperTrap",
+        "WrapperTrapConfig"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/EtherTrap3.sol": {
+      "lastModificationDate": 1618687676282,
+      "contentHash": "fd61b84e6b2f393276b98bc38e5d2293",
+      "sourceName": "contracts/EtherTrap3.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol",
+        "./WrapperTrap.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "EtherTrap3"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/EtherTrap5.sol": {
+      "lastModificationDate": 1620329676573,
+      "contentHash": "eb8fd71d3732a21c8d3eaec56206e5cb",
+      "sourceName": "contracts/EtherTrap5.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol",
+        "./WrapperTrap3.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "EtherTrap5"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/WrapperTrap3.sol": {
+      "lastModificationDate": 1620329676573,
+      "contentHash": "7d0fe5a9a89bdae408295b7f4552b99d",
+      "sourceName": "contracts/WrapperTrap3.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableMask.sol",
+        "./ERC20Burnable.sol",
+        "./LiquidityProtectedBase.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "WrapperTrap3",
+        "WrapperTrapConfig3"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/WrapperTrap2.sol": {
+      "lastModificationDate": 1620243311203,
+      "contentHash": "3573cfa43a052f78b6e3785558a8833d",
+      "sourceName": "contracts/WrapperTrap2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableMask.sol",
+        "./ERC20Burnable.sol",
+        "./LiquidityProtectedBase.sol",
+        "./ExtraMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "WrapperTrap2",
+        "WrapperTrapConfig2"
+      ]
+    },
+    "/home/yurun/lastperson/ether/contracts/PayMiner.sol": {
+      "lastModificationDate": 1618959108157,
+      "contentHash": "9590b1251956e234fe40877eaf1887c5",
+      "sourceName": "contracts/PayMiner.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "PayMiner"
+      ]
+    },
+    "/home/yurun/martin/staking-distrbution/ether/contracts/external/UniswapV2Library.sol": {
+      "lastModificationDate": 1621945515783,
+      "contentHash": "57d8b1d041756a4f6c6c2433cf8d01d0",
+      "sourceName": "contracts/external/UniswapV2Library.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.6"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "UniswapV2Library"
+      ]
+    },
+    "/home/yurun/martin/staking-distrbution/ether/contracts/SD.sol": {
+      "lastModificationDate": 1622210825137,
+      "contentHash": "c0e1fe182f90ffdb6bed3cae7efd86b2",
+      "sourceName": "contracts/SD.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "IERC20",
+        "SD"
+      ]
+    },
+    "/home/yurun/martin/staking-distrbution/ether/contracts/StakeToken.sol": {
+      "lastModificationDate": 1621956551683,
+      "contentHash": "d85b27d8a2f7293301e6df6eb8ff0617",
+      "sourceName": "contracts/StakeToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "Address",
+        "Context",
+        "IERC20",
+        "SafeMath",
+        "StakeToken"
+      ]
+    },
+    "/home/yurun/martin/staking-distrbution/ether/contracts/USDTToken.sol": {
+      "lastModificationDate": 1621959597103,
+      "contentHash": "3e507a77c23f37c666434160d577d629",
+      "sourceName": "contracts/USDTToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "Address",
+        "Context",
+        "IERC20",
+        "SafeMath",
+        "USDTToken"
+      ]
+    }
+  }
+}
