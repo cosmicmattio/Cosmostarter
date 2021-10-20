@@ -32,14 +32,14 @@ Config.js keys are configured to work with fork.
    contract/SD.sol (as usdt_address)
    config.js (as USDTToken_ADDRESS)
 
-4. Deploy fake StakeToken
+4. Deploy fake Cosmostarter
 
    npm run hardhat -- --network target deployusdt
 
-   You will need to note StakeToken address: 0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690 (example)
+   You will need to note Cosmostarter address: 0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690 (example)
    And set it in:
    contract/SD.sol (as staking_token_address)
-   config.js (as StakeToken_ADDRESS)
+   config.js (as Cosmostarter_ADDRESS)
 
 6. Set desired staking_end_timestamp, deposit_start_timestamp, and deposit_end_timestamp in contract/SD.sol and compile it:
 
@@ -52,11 +52,11 @@ Config.js keys are configured to work with fork.
    And set it in:
      config.js (as SD_ADDRESS)
 
-7. Distribute ETH/USDT/Stake among buyers
+7. Distribute ETH/USDT/Cosmostarter among buyers
 
    npm run hardhat -- --network target distribute
 
-8. Approve USDT/Stake on SD contract for all buyers:
+8. Approve USDT/Cosmostarter on SD contract for all buyers:
 
    npm run hardhat -- --network target approve
 
