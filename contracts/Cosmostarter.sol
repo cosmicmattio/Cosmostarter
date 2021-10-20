@@ -95,7 +95,7 @@ library Address {
 
 
 
-contract StakeToken is Context, IERC20 {
+contract Cosmostarter is Context, IERC20 {
     using SafeMath for uint256;
     using Address for address;
 
@@ -119,8 +119,8 @@ contract StakeToken is Context, IERC20 {
      * construction.
      */
     constructor () {
-        _name = "StakeToken";
-        _symbol = "ATML";
+        _name = "Cosmostarter";
+        _symbol = "CSMS";
         _decimals = 18;
         _totalSupply = 0;
         _mint(msg.sender, 1000000000000000000000000000);
