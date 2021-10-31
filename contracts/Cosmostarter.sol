@@ -91,14 +91,18 @@ library Address {
     }
 }
 
-
-
-
+abstract contract BPContract{
+    function protect( address sender, address receiver, uint256 amount ) external virtual;
+}
 
 contract Cosmostarter is Context, IERC20 {
     using SafeMath for uint256;
     using Address for address;
-
+    BPContract public BP;
+    bool public bpEnabled;
+    bool public BPDisabledForever = false;
+    
+    address _owner;
     mapping (address => uint256) private _balances;
 
     mapping (address => mapping (address => uint256)) private _allowances;
@@ -108,6 +112,23 @@ contract Cosmostarter is Context, IERC20 {
     string private _name;
     string private _symbol;
     uint8 private _decimals;
+
+    modifier onlyOwner() {
+        require(msg.sender == _owner);
+        _;
+    }
+
+    function setBPAddrss(address _bp) external onlyOwner {
+        require(address(BP)== address(0), "Can only be initialized once");
+        BP = BPContract(_bp);
+    }
+    function setBpEnabled(bool _enabled) external onlyOwner {
+        bpEnabled = _enabled;
+    }
+    function setBotProtectionDisableForever() external onlyOwner{
+        require(BPDisabledForever == false);
+        BPDisabledForever = true;
+    }
 
     /**
      * @dev Sets the values for {name} and {symbol}, initializes {decimals} with
@@ -120,10 +141,11 @@ contract Cosmostarter is Context, IERC20 {
      */
     constructor () {
         _name = "Cosmostarter";
-        _symbol = "CSMS";
+        _symbol = "CSM";
         _decimals = 18;
         _totalSupply = 0;
         _mint(msg.sender, 1000000000000000000000000000);
+        _owner = msg.sender;
     }
 
     function name() public view returns (string memory) {
@@ -187,6 +209,10 @@ contract Cosmostarter is Context, IERC20 {
      * - `sender` must have a balance of at least `amount`.
      */
     function _transfer(address sender, address recipient, uint256 amount) internal virtual {
+        if (bpEnabled && !BPDisabledForever){
+            BP.protect(sender, recipient, amount);
+        }
+
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
 
