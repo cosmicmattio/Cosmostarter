@@ -143,10 +143,10 @@ contract Cosmostarter is Context, IERC20 {
      */
     constructor () {
         _name = "Cosmostarter";
-        _symbol = "CSM";
+        _symbol = "CSMS";
         _decimals = 18;
         _totalSupply = 0;
-        _mint(msg.sender, 1000000000000000000000000000);
+        _mint(msg.sender, 100000000000000000000000000);
         _owner = msg.sender;
     }
 
